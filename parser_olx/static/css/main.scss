@@ -73,7 +73,7 @@ input{
         height: 220px;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 47%;
         margin: -125px 0 0 -125px; 
         border: 1px solid gray;
         border-radius: 5px;
@@ -99,6 +99,7 @@ input{
             
             width: 95%;
             border-radius: 5px;
+            border: 0px;
             
         }
     }
@@ -182,9 +183,11 @@ input{
     }
     
     td{
+        max-width: 100;
         background-color: white;
         //border: 1px solid gray;
         border-radius: 5px;
+        overflow: hidden;
         
     }
 
@@ -196,9 +199,16 @@ input{
     .product_block_title{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
-        font-size: calc(18px + (24 - 23) * (100vw - 400px) / (1200 - 400));
-        
-        //display: inline-block;
+
+        max-width: 750px;
+
+        display: inline-block;
+        overflow-wrap: break-word;
+        max-width: 360px;
+        overflow: hidden;
+
+        //display: block;
+        //width:100%;
         //overflow: hidden;
 
     }
@@ -250,4 +260,5 @@ input{
 
 .big_block{
     position:relative;
+    
     }
