@@ -250,4 +250,8 @@ input:focus {
 .big_block {
   position: relative;
 }
+
+hr {
+  max-width: 800px;
+}
 /*# sourceMappingURL=main.css.map */
