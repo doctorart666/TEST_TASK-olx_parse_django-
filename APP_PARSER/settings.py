@@ -125,9 +125,10 @@ USE_TZ = True
 # Enable WhiteNoise's GZip compression of static assets.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "parser_olx/static"),]
-
+#STATIC_URL = '/static/'
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, "parser_olx/static"),]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_URL = "static/"
 
 
 #MEDIA_URL = '/media/'
