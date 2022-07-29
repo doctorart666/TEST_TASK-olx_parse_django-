@@ -1,1 +1,1 @@
-web: gunicorn APP_PARSER.wsgi
+web: gunicorn APP_PARSER.wsgi.application

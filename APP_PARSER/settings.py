@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+4m&7--y0+t*9!^gg%#)z$x$and5f82hcua*5c))qcp4^$0v82'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #ALLOWED_HOSTS = ["95.216.143.246", "0.0.0.0:8080", "127.0.0.1", 'localhost:8000', 'mysite,com']
 ALLOWED_HOSTS = ['olxparser-test.herokuapp.com', '127.0.0.1']
@@ -120,14 +120,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 
-STATIC_URL = 'static/'
+#STATIC_URL = 'static/'
 
 # Enable WhiteNoise's GZip compression of static assets.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-#STATIC_URL = '/static/'
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, "parser_olx/static"),]
-# #
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "parser_olx/static"),]
+
 
 
 #MEDIA_URL = '/media/'
